@@ -1,5 +1,193 @@
+/*
+let country = 'India';
+let continent = 'Asia';
+let population = '1.4 B';
+
+console.log(country);
+console.log(continent);
+console.log(population);
+
+let javas = true;
+console.log(typeof javas);
+*/
+/*const myage = 2023 - 2004
+const herage = 2023 - 2007
+console.log(myage * 4, herage / 10, 2 ** 8);
+
+const firstName = 'Shiva';
+const lastName = 'Sajay';
+console.log(firstName + ' ' + lastName);
+
+let x = 13 + 88
+x += 4
+console.log(x)
+console.log(myage >= 17);
+
+let z, y;
+z = y = 25 - 10 - 5;
+console.log(x, y);
+//CODING CHALLENGE.1
+
+const Markmass1 = 78
+const Markheight1 = 1.69
+const Johnmass1 = 92
+const Johnheight1 = 1.95
+const Markmass2 = 95
+const Markheight2 = 1.88
+const Johnmass2 = 85
+const Johnheight2 = 1.76
+
+const BMIMark1 = Markmass1 / Markheight1 ** 2;
+const BMIJohn1 = Johnmass1 / Johnheight1 ** 2;
+const BMIMark2 = Markmass2 / Markheight2 ** 2;
+const BMIJohn2 = Johnmass2 / Johnheight2 ** 2;
+const markhigherBMI = BMIMark1 > BMIJohn1;
+const johnhigherBMI = BMIMark2 < BMIJohn2;
+
+console.log(BMIMark1, BMIJohn1, BMIMark2, BMIJohn2);
+console.log(markhigherBMI, johnhigherBMI);*/
+
+
+/*const firstName = 'Shiva';
+const ShivaNew = `I'M ${firstName}!`;
+console.log(ShivaNew)*/
+
+/*const age = 86;
+if (age >= 18) {
+  console.log('Yay!You can start Driving!');
+
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sorry.You are too young to drive. Wait another ${yearsLeft}years:)`);
+}
+
+const birthYear = 2004;
+
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(inputYear + 18);*/
+
+/*const favourite = prompt("What's your favourite number?");
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === '23') {
+  console.log('Noicee! 23 is a cool number');
+
+
+} else if (favourite === '7') {
+  console.log('COOL');
+
+} else {
+  console.log('You are an idiot!')
+}
+
+const hasDriversLicense = false;
+const hasGoodVision = true;
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+if (shouldDrive) {
+  console.log('you can Drive!')
+} else {
+  console.log('Sorry. You cannot Drive')
+}
+
+const day = 'Saturday';
+switch (day) {
+  case 'monday':
+    console.log('Plan');
+    console.log('Debug');
+    break;
+// ternary operator
+
+  case 'tuesday':
+    console.log('Prepare');
+    break;
+  case 'Wednesday':
+  case 'Thursday':
+    console.log('Write Code');
+    break;
+  case 'friday':
+    console.log('Record');
+    break;
+  case 'Saturday':
+  case 'Sunday':
+    console.log('Enjoy!');
+    break;
+  default:
+    console.log('Not a valid Day!');
+
+}
+*/
+//const age = 22;
+/*const age = prompt('What is your age?');
+console.log(age)
+const drink = age >= 18 ?
+  'wine🍷' : 'water💦';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = 'wine🍷';
+
+} else {
+  drink2 = 'water💦'
+}
+console.log(drink2)
+
+console.log(`I like to drink ${age >= 18 ? 'wine🍷' : 'water💦'}`);*/
+
 'use strict';
 
+function logger() {
+  console.log('My name is Shiva');
+}
+
+
+
+logger();
+logger();
+logger();
+
+function fruitProcessor(apples, oranges) {
+
+  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+  return juice;
+}
+
+const applejuice = fruitProcessor(5, 0);
+console.log(applejuice);
+
+const appleorangejuice = fruitProcessor(2, 4);
+console.log(appleorangejuice)
+
+//Function declaration
+function calcAge1(birthYeah) {
+  return 2037 - birthYeah;
+}
+const age1 = calcAge1(1991);
+
+//Function Expression 
+const calcAge2 = function (birthYeah) {
+
+  return 2037 - birthYeah;
+
+}
+const age2 = calcAge2(1991);
+console.log(age1, age2);
+
+const calcAge
 /*
 ///////////////////////////////////////
 // Activating Strict Mode
@@ -25,7 +213,7 @@ logger();
 logger();
 
 function fruitProcessor(apples, oranges) {
-  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+  const juice = `Juice; with ${apples} apples and ${oranges} oranges.`;
   return juice;
 }
 
